@@ -1,0 +1,542 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Informações empresariais de 57.271.585 Fernanda Fernandes de Souza, empresa ativa em São Paulo - SP.">
+  <meta name="theme-color" content="#111111">
+  <title>Fernanda Fernandes de Souza | Informações Empresariais</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
+
+  <style>
+    :root{
+      --black:#0b0b0c;
+      --black-2:#151516;
+      --gold:#c9a24d;
+      --gold-light:#e4c878;
+      --cream:#f7f4ed;
+      --text:#202020;
+      --muted:#737373;
+      --white:#fff;
+      --green:#1f9d63;
+      --border:#e8e3d8;
+      --shadow:0 20px 55px rgba(0,0,0,.10);
+    }
+
+    *{margin:0;padding:0;box-sizing:border-box}
+    html{scroll-behavior:smooth}
+    body{
+      font-family:"DM Sans",sans-serif;
+      background:#f7f7f7;
+      color:var(--text);
+      line-height:1.6;
+    }
+    a{text-decoration:none;color:inherit}
+    .container{width:min(1120px,92%);margin:auto}
+
+    header{
+      position:sticky;
+      top:0;
+      z-index:1000;
+      background:rgba(11,11,12,.95);
+      backdrop-filter:blur(14px);
+      border-bottom:1px solid rgba(201,162,77,.18);
+    }
+    .nav{
+      min-height:76px;
+      display:flex;
+      align-items:center;
+      justify-content:space-between;
+      gap:25px;
+    }
+    .brand{display:flex;align-items:center;gap:13px}
+    .brand-mark{
+      width:44px;height:44px;border-radius:12px;
+      display:grid;place-items:center;
+      color:var(--gold-light);
+      border:1px solid rgba(201,162,77,.45);
+      background:linear-gradient(145deg,#1d1d1e,#080808);
+      font-size:19px;font-weight:700;
+    }
+    .brand strong{display:block;color:white;font-size:15px}
+    .brand span{
+      display:block;color:#aaa;font-size:10px;
+      letter-spacing:1.2px;text-transform:uppercase
+    }
+    nav{display:flex;align-items:center;gap:25px}
+    nav a{font-size:12px;font-weight:600;color:#cfcfcf}
+    nav a:hover{color:var(--gold-light)}
+    .nav-btn{
+      padding:10px 16px;border-radius:8px;
+      background:var(--gold);color:#111!important;
+    }
+
+    .hero{
+      position:relative;
+      overflow:hidden;
+      background:
+        radial-gradient(circle at 85% 20%,rgba(201,162,77,.18),transparent 28%),
+        linear-gradient(135deg,#090909 0%,#171717 55%,#24211a 100%);
+      color:white;
+    }
+    .hero:before{
+      content:"";
+      position:absolute;
+      width:480px;height:480px;
+      right:-180px;top:-220px;
+      border:1px solid rgba(201,162,77,.18);
+      border-radius:50%;
+    }
+    .hero-content{
+      min-height:570px;
+      display:grid;
+      grid-template-columns:1.05fr .95fr;
+      align-items:center;
+      gap:70px;
+      padding:75px 0;
+      position:relative;
+      z-index:1;
+    }
+    .eyebrow{
+      display:inline-flex;align-items:center;gap:9px;
+      padding:8px 13px;border-radius:50px;
+      background:rgba(201,162,77,.10);
+      border:1px solid rgba(201,162,77,.30);
+      color:var(--gold-light);
+      font-size:11px;font-weight:700;
+      letter-spacing:.5px;margin-bottom:22px;
+    }
+    .dot{width:7px;height:7px;background:#35c982;border-radius:50%}
+    h1{
+      font-family:"Playfair Display",serif;
+      font-size:clamp(40px,5vw,66px);
+      line-height:1.05;
+      letter-spacing:-1.5px;
+      margin-bottom:23px;
+    }
+    h1 span{color:var(--gold-light)}
+    .hero p{
+      max-width:640px;
+      color:#d1d1d1;
+      font-size:15px;
+      line-height:1.85;
+      margin-bottom:28px;
+    }
+    .buttons{display:flex;flex-wrap:wrap;gap:12px}
+    .btn{
+      display:inline-flex;align-items:center;justify-content:center;
+      gap:8px;padding:14px 19px;border-radius:9px;
+      font-size:12px;font-weight:700;transition:.2s;
+    }
+    .btn:hover{transform:translateY(-2px)}
+    .btn-gold{background:var(--gold);color:#111;box-shadow:0 12px 30px rgba(0,0,0,.25)}
+    .btn-outline{border:1px solid rgba(255,255,255,.22);color:white}
+
+    .company-card{
+      background:rgba(255,255,255,.98);
+      color:var(--text);
+      border-radius:22px;
+      padding:28px;
+      box-shadow:0 30px 70px rgba(0,0,0,.30);
+    }
+    .card-head{
+      display:flex;align-items:center;gap:14px;
+      padding-bottom:20px;border-bottom:1px solid #ececec;
+    }
+    .card-icon{
+      width:56px;height:56px;border-radius:15px;
+      display:grid;place-items:center;
+      background:#f5ecd8;color:#9c762c;
+      font-size:24px;
+    }
+    .card-head h2{font-size:16px;margin-bottom:2px}
+    .card-head p{font-size:11px;color:#858585}
+    .status{
+      display:flex;align-items:center;gap:8px;
+      margin:20px 0;color:var(--green);
+      font-size:12px;font-weight:700;
+    }
+    .status-dot{width:9px;height:9px;border-radius:50%;background:#26b875;box-shadow:0 0 0 5px rgba(38,184,117,.10)}
+    .data{display:grid;gap:13px}
+    .row{
+      display:flex;justify-content:space-between;gap:20px;
+      padding-bottom:12px;border-bottom:1px solid #efefef;
+    }
+    .row:last-child{border-bottom:0}
+    .row span{font-size:11px;color:#888}
+    .row strong{font-size:11px;text-align:right;color:#292929}
+
+    .trust{
+      background:white;border-bottom:1px solid var(--border);
+      padding:24px 0;
+    }
+    .trust-grid{display:grid;grid-template-columns:repeat(4,1fr)}
+    .trust-item{
+      display:flex;align-items:center;justify-content:center;
+      gap:10px;border-right:1px solid #e8e8e8;
+    }
+    .trust-item:last-child{border-right:0}
+    .trust-icon{color:#aa8338;font-size:20px}
+    .trust-item strong{display:block;font-size:12px}
+    .trust-item span{display:block;color:#888;font-size:10px}
+
+    main{padding:65px 0}
+    .section{
+      background:white;border:1px solid var(--border);
+      border-radius:20px;padding:32px;margin-bottom:22px;
+      box-shadow:var(--shadow);
+    }
+    .heading{margin-bottom:25px}
+    .heading h2{
+      font-family:"Playfair Display",serif;
+      font-size:29px;color:#171717;margin-bottom:4px
+    }
+    .heading p{font-size:12px;color:#858585}
+
+    .info-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:14px}
+    .info{
+      padding:18px;border:1px solid #ebe7df;
+      border-radius:12px;background:#fcfbf8;
+    }
+    .info label{
+      display:block;color:#9a9a9a;font-size:9px;
+      text-transform:uppercase;letter-spacing:.8px;margin-bottom:7px
+    }
+    .info strong{display:block;font-size:13px;line-height:1.5}
+
+    .activity{
+      display:flex;align-items:center;gap:17px;
+      padding:22px;border-radius:15px;
+      background:linear-gradient(135deg,#fbf7ed,#fff);
+      border:1px solid #eee3ca;
+    }
+    .activity-icon{
+      flex-shrink:0;width:60px;height:60px;border-radius:15px;
+      display:grid;place-items:center;
+      background:#171717;color:var(--gold-light);
+      font-size:25px;
+    }
+    .activity h3{font-size:17px;margin-bottom:3px}
+    .activity p{font-size:12px;color:#777}
+
+    .address-grid{display:grid;grid-template-columns:1fr 1fr;gap:14px}
+    .address-card{
+      padding:20px;border-radius:13px;
+      background:#fafafa;border:1px solid #e9e9e9;
+    }
+    .address-card .icon{font-size:21px;color:#a47d32;margin-bottom:9px}
+    .address-card h3{font-size:14px;margin-bottom:6px}
+    .address-card p{font-size:12px;color:#777;line-height:1.75}
+
+    .contact{
+      background:linear-gradient(135deg,#0b0b0c,#242019);
+      color:white;border:0;overflow:hidden;position:relative;
+    }
+    .contact h2{color:white}
+    .contact p{color:#c9c9c9;max-width:650px;font-size:13px;margin-bottom:20px}
+
+    footer{background:#090909;color:#999;padding:42px 0 22px}
+    .footer-grid{
+      display:grid;grid-template-columns:1.5fr 1fr 1fr;
+      gap:45px;padding-bottom:30px;
+      border-bottom:1px solid rgba(255,255,255,.08)
+    }
+    .footer-brand{
+      color:white;font-family:"Playfair Display",serif;
+      font-size:21px;margin-bottom:8px
+    }
+    .footer-description{max-width:340px;font-size:11px;line-height:1.8}
+    .footer-title{
+      color:#ddd;font-size:10px;font-weight:700;
+      text-transform:uppercase;letter-spacing:.9px;margin-bottom:10px
+    }
+    .footer-column p{font-size:11px;line-height:1.8}
+    .footer-bottom{
+      display:flex;justify-content:space-between;gap:20px;
+      padding-top:18px;font-size:9px
+    }
+
+    .whatsapp{
+      position:fixed;right:20px;bottom:20px;z-index:999;
+      width:56px;height:56px;border-radius:50%;
+      display:grid;place-items:center;
+      background:#1ebc6b;color:white;
+      font-size:23px;box-shadow:0 12px 30px rgba(0,0,0,.25);
+      transition:.2s
+    }
+    .whatsapp:hover{transform:scale(1.07)}
+
+    @media(max-width:850px){
+      nav{display:none}
+      .hero-content{grid-template-columns:1fr;gap:35px;padding:55px 0 70px}
+      .info-grid{grid-template-columns:1fr 1fr}
+      .trust-grid{grid-template-columns:1fr 1fr;gap:20px}
+      .trust-item{border-right:0;justify-content:flex-start}
+      .footer-grid{grid-template-columns:1fr;gap:25px}
+    }
+    @media(max-width:600px){
+      .info-grid,.address-grid{grid-template-columns:1fr}
+      .section{padding:23px}
+      h1{font-size:42px}
+      .hero p{font-size:14px}
+      .company-card{padding:22px}
+      .footer-bottom{flex-direction:column}
+    }
+  </style>
+</head>
+
+<body>
+
+<header>
+  <div class="container nav">
+    <a href="#" class="brand">
+      <div class="brand-mark">FF</div>
+      <div>
+        <strong>Fernanda Fernandes</strong>
+        <span>Empresa • São Paulo - SP</span>
+      </div>
+    </a>
+
+    <nav>
+      <a href="#empresa">Empresa</a>
+      <a href="#atividade">Atividade</a>
+      <a href="#localizacao">Localização</a>
+      <a href="#contato" class="nav-btn">Contato</a>
+    </nav>
+  </div>
+</header>
+
+<section class="hero">
+  <div class="container hero-content">
+
+    <div>
+      <div class="eyebrow"><span class="dot"></span> EMPRESA COM SITUAÇÃO CADASTRAL ATIVA</div>
+
+      <h1>Profissionalismo e confiança <span>em cada detalhe.</span></h1>
+
+      <p>
+        A empresa <strong>57.271.585 Fernanda Fernandes de Souza</strong>
+        atua no comércio varejista de suvenires, bijuterias e artesanatos,
+        com atividade secundária no comércio de cosméticos, produtos de
+        perfumaria e de higiene pessoal.
+      </p>
+
+      <div class="buttons">
+        <a href="tel:+551193086415" class="btn btn-gold">☎ Entrar em contato</a>
+        <a href="#empresa" class="btn btn-outline">Ver informações</a>
+      </div>
+    </div>
+
+    <div class="company-card">
+      <div class="card-head">
+        <div class="card-icon">▣</div>
+        <div>
+          <h2>Dados empresariais</h2>
+          <p>Informações cadastrais</p>
+        </div>
+      </div>
+
+      <div class="status">
+        <span class="status-dot"></span>
+        Situação cadastral ATIVA
+      </div>
+
+      <div class="data">
+        <div class="row">
+          <span>CNPJ</span>
+          <strong>57.271.585/0001-00</strong>
+        </div>
+        <div class="row">
+          <span>Natureza jurídica</span>
+          <strong>Empresário (Individual)</strong>
+        </div>
+        <div class="row">
+          <span>Atividade principal</span>
+          <strong>Suvenires, bijuterias e artesanatos</strong>
+        </div>
+        <div class="row">
+          <span>Data de abertura</span>
+          <strong>12/09/2024</strong>
+        </div>
+        <div class="row">
+          <span>Município</span>
+          <strong>São Paulo - SP</strong>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<section class="trust">
+  <div class="container trust-grid">
+    <div class="trust-item">
+      <div class="trust-icon">✓</div>
+      <div><strong>Cadastro ativo</strong><span>Situação cadastral ativa</span></div>
+    </div>
+    <div class="trust-item">
+      <div class="trust-icon">◆</div>
+      <div><strong>Empresa individual</strong><span>Natureza jurídica registrada</span></div>
+    </div>
+    <div class="trust-item">
+      <div class="trust-icon">⌂</div>
+      <div><strong>São Paulo - SP</strong><span>Estabelecimento cadastrado</span></div>
+    </div>
+    <div class="trust-item">
+      <div class="trust-icon">▣</div>
+      <div><strong>Desde 2024</strong><span>Ativa desde 12/09/2024</span></div>
+    </div>
+  </div>
+</section>
+
+<main>
+  <div class="container">
+
+    <section class="section" id="empresa">
+      <div class="heading">
+        <h2>Sobre a empresa</h2>
+        <p>Dados cadastrais e informações empresariais</p>
+      </div>
+
+      <div class="info-grid">
+        <div class="info">
+          <label>Nome empresarial</label>
+          <strong>57.271.585 Fernanda Fernandes de Souza</strong>
+        </div>
+        <div class="info">
+          <label>CNPJ</label>
+          <strong>57.271.585/0001-00</strong>
+        </div>
+        <div class="info">
+          <label>Porte</label>
+          <strong>ME</strong>
+        </div>
+        <div class="info">
+          <label>Natureza jurídica</label>
+          <strong>213-5 - Empresário (Individual)</strong>
+        </div>
+        <div class="info">
+          <label>Data de abertura</label>
+          <strong>12 de setembro de 2024</strong>
+        </div>
+        <div class="info">
+          <label>Situação cadastral</label>
+          <strong>ATIVA</strong>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="atividade">
+      <div class="heading">
+        <h2>Atividades econômicas</h2>
+        <p>Atividades informadas no cadastro empresarial</p>
+      </div>
+
+      <div class="activity">
+        <div class="activity-icon">✦</div>
+        <div>
+          <h3>Comércio varejista de suvenires, bijuterias e artesanatos</h3>
+          <p>Código CNAE principal: 47.89-0-01</p>
+        </div>
+      </div>
+
+      <br>
+
+      <div class="activity">
+        <div class="activity-icon">✧</div>
+        <div>
+          <h3>Comércio varejista de cosméticos, perfumaria e higiene pessoal</h3>
+          <p>Código CNAE secundário: 47.72-5-00</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="localizacao">
+      <div class="heading">
+        <h2>Localização</h2>
+        <p>Endereço cadastrado da empresa</p>
+      </div>
+
+      <div class="address-grid">
+        <div class="address-card">
+          <div class="icon">⌂</div>
+          <h3>Endereço</h3>
+          <p>
+            Avenida Nagib Farah Maluf, nº 375<br>
+            Conjunto Residencial José Bonifacio<br>
+            CEP 08253-015
+          </p>
+        </div>
+
+        <div class="address-card">
+          <div class="icon">◉</div>
+          <h3>Município</h3>
+          <p>
+            São Paulo<br>
+            Estado de São Paulo — SP<br>
+            Brasil
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section contact" id="contato">
+      <div class="heading">
+        <h2>Entre em contato</h2>
+        <p>Fale diretamente com a empresa</p>
+      </div>
+
+      <p>
+        Para informações, atendimento ou assuntos relacionados às atividades
+        comerciais, utilize os canais de contato cadastrados.
+      </p>
+
+      <div class="buttons">
+        <a href="tel:+551193086415" class="btn btn-gold">☎ (11) 93086-6415</a>
+        <a href="mailto:fernanda.fernandes.0209@gmail.com" class="btn btn-outline">✉ Enviar e-mail</a>
+      </div>
+    </section>
+
+  </div>
+</main>
+
+<footer>
+  <div class="container">
+    <div class="footer-grid">
+      <div>
+        <div class="footer-brand">Fernanda Fernandes de Souza</div>
+        <p class="footer-description">
+          Página institucional com informações empresariais e canais de contato.
+          Os dados apresentados foram baseados no comprovante cadastral fornecido.
+        </p>
+      </div>
+
+      <div class="footer-column">
+        <div class="footer-title">Empresa</div>
+        <p>CNPJ: 57.271.585/0001-00</p>
+        <p>Empresário (Individual)</p>
+        <p>Situação: ATIVA</p>
+      </div>
+
+      <div class="footer-column">
+        <div class="footer-title">Contato</div>
+        <p>(11) 93086-6415</p>
+        <p>fernanda.fernandes.0209@gmail.com</p>
+        <p>São Paulo - SP</p>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <span>© 2026 Fernanda Fernandes de Souza. Todos os direitos reservados.</span>
+      <span>CNPJ 57.271.585/0001-00</span>
+    </div>
+  </div>
+</footer>
+
+<a class="whatsapp" href="https://wa.me/551193086415" target="_blank" rel="noopener" aria-label="WhatsApp">◉</a>
+
+</body>
+</html>
